@@ -10,7 +10,7 @@ monogatari.script ({
         "<i>Why did I even agree to this?</i>",
         "<i>It's MY birthday! I should be the one handing gifts and see their happy faces!</i>",
         "...",
-        "<i>I do admit, I'm a bit curious</i>",
+        "<i>I do admit, I'm a bit curious.</i>",
         "...",
         "brenn It's all good, you can open your eyes!",
         "jump ch1-start"

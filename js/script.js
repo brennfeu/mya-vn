@@ -1,16 +1,23 @@
 /* global monogatari */
 
 // Define the messages used in the game.
-monogatari.action ('message').messages ({ });
-
-// Define the notifications used in the game
-monogatari.action ('notification').notifications ({
-	'Welcome': {
-		title: 'Welcome',
-		body: 'This is the Monogatari VN Engine',
-		icon: ''
+monogatari.action ('message').messages ({
+	"chapterI": {
+		title: "<b>CHAPTER I</b>",
+		subtitle: "-- <i>An Unexpected Present</i> --"
+	},
+	"chapterII": {
+		title: "<b>CHAPTER II</b>",
+		subtitle: "-- <i>An Uncertain Future</i> --"
+	},
+	"chapterIII": {
+		title: "<b>CHAPTER III</b>",
+		subtitle: "-- <i>An Unbelievable Past</i> --"
 	}
 });
+
+// Define the notifications used in the game
+monogatari.action ('notification').notifications ({ });
 
 // Define the Particles JS Configurations used in the game
 monogatari.action ('particles').particles ({ });
@@ -50,14 +57,17 @@ monogatari.assets ('scenes', {
 monogatari.characters ({
 	'brenn': {
 		name: 'Brenn',
-		color: '#5bcaff'
+		color: '#5bcaff',
+		directory: "brenn"
 	},
 	'mya': {
 		name: 'Mya',
-		color: '#5bcaff'
+		color: '#5bcaff',
+		directory: "mya"
 	},
 	'nota': {
 		name: 'Céliane',
-		color: '#5bcaff'
+		color: '#5bcaff',
+		directory: "nota"
 	},
 });
