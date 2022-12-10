@@ -4,7 +4,7 @@ monogatari.script ({
         'show scene #000000',
         '...',
         'Can I open my eyes now?',
-        'brenn Not yet! We\'re soon ready!',
+        'brenn Not yet! We\'re almost done!',
         "Fine...",
         "...",
         "<i>Why did I even agree to this?</i>",
@@ -19,5 +19,5 @@ monogatari.script ({
 
 var TODAY_DATE = new Date();
 var CHAPTER_I_DATE = new Date("2021-12-14");
-var CHAPTER_II_DATE = new Date("2021-12-19");
-var CHAPTER_III_DATE = new Date("2021-12-24");
+var CHAPTER_II_DATE = new Date("2022-12-19");
+var CHAPTER_III_DATE = new Date("2022-12-24");

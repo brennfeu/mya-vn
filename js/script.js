@@ -1,4 +1,14 @@
 /* global monogatari */
+monogatari.component ('main-screen').template (() => {
+    return `
+        <h1>Mya's Epic Birthday!</h1>
+		<img src="./assets/images/title-screen.png" width="554" height="418" style="
+			display: block;
+			margin-left: auto;
+  			margin-right: auto;"></img>
+        <main-menu></main-menu>
+    `;
+});
 
 // Define the messages used in the game.
 monogatari.action ('message').messages ({
@@ -33,7 +43,9 @@ monogatari.configuration ('credits', { });
 monogatari.assets ('gallery', { });
 
 // Define the music used in the game.
-monogatari.assets ('music', { });
+monogatari.assets ('music', {
+	"main-menu": "stationary-traveller.mp3"
+});
 
 // Define the voice files used in the game.
 monogatari.assets ('voices', { });
@@ -49,7 +61,10 @@ monogatari.assets ('images', { });
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
-	"birthday-beedroom": "birthday-bedroom.png"
+	"birthday-beedroom": "birthday-bedroom.png",
+	"outside-myas-place": "outside.png",
+	"outside-mysterious-building": "outside2.png",
+	"inside-mysterious-building": "inside.jpg",
 });
 
 
