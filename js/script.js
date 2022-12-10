@@ -16,6 +16,10 @@ monogatari.action ('message').messages ({
 		title: "<b>CHAPTER I</b>",
 		subtitle: "-- <i>An Unexpected Present</i> --"
 	},
+	"chapterI-unreleased": {
+		title: "Chapter I releases this 14th of December!",
+		subtitle: "Gotta wait until your exams are all done, sorry."
+	},
 	"chapterII": {
 		title: "<b>CHAPTER II</b>",
 		subtitle: "-- <i>An Uncertain Future</i> --"
@@ -30,7 +34,338 @@ monogatari.action ('message').messages ({
 monogatari.action ('notification').notifications ({ });
 
 // Define the Particles JS Configurations used in the game
-monogatari.action ('particles').particles ({ });
+monogatari.action('Particles').particles({
+    'miku-magic-slight': {
+        'particles': {
+            'number': {
+                'value': 50,
+                'density': {
+                    'enable': true,
+                    'value_area': 3000
+                }
+            },
+            'color': {
+                'value': '#86cecb'
+            },
+            'shape': {
+                'type': 'circle',
+                'stroke': {
+                    'width': 0,
+                    'color': '#000000'
+                },
+                'polygon': {
+                    'nb_sides': 3
+                },
+                'image': {
+                    'src': 'img/github.svg',
+                    'width': 100,
+                    'height': 100
+                }
+            },
+            'opacity': {
+                'value': 0.5,
+                'random': true,
+                'anim': {
+                    'enable': false,
+                    'speed': 1,
+                    'opacity_min': 0.1,
+                    'sync': false
+                }
+            },
+            'size': {
+                'value': 2,
+                'random': true,
+                'anim': {
+                    'enable': true,
+                    'speed': 5,
+                    'size_min': 0,
+                    'sync': false
+                }
+            },
+            'line_linked': {
+                'enable': false,
+                'distance': 500,
+                'color': '#ffffff',
+                'opacity': 0.4,
+                'width': 2
+            },
+            'move': {
+                'enable': true,
+                'speed': 7.8914764163227265,
+                'direction': 'top',
+                'random': true,
+                'straight': false,
+                'out_mode': 'out',
+                'bounce': false,
+                'attract': {
+                    'enable': false,
+                    'rotateX': 600,
+                    'rotateY': 1200
+                }
+            }
+        },
+        'interactivity': {
+            'detect_on': 'canvas',
+            'events': {
+                'onhover': {
+                    'enable': false,
+                    'mode': 'bubble'
+                },
+                'onclick': {
+                    'enable': false,
+                    'mode': 'repulse'
+                },
+                'resize': true
+            },
+            'modes': {
+                'grab': {
+                    'distance': 400,
+                    'line_linked': {
+                        'opacity': 0.5
+                    }
+                },
+                'bubble': {
+                    'distance': 400,
+                    'size': 4,
+                    'duration': 0.3,
+                    'opacity': 1,
+                    'speed': 3
+                },
+                'repulse': {
+                    'distance': 200,
+                    'duration': 0.4
+                },
+                'push': {
+                    'particles_nb': 4
+                },
+                'remove': {
+                    'particles_nb': 2
+                }
+            }
+        },
+        'retina_detect': true
+    },
+    'miku-magic': {
+        'particles': {
+            'number': {
+                'value': 2000,
+                'density': {
+                    'enable': true,
+                    'value_area': 3000
+                }
+            },
+            'color': {
+                'value': '#86cecb'
+            },
+            'shape': {
+                'type': 'circle',
+                'stroke': {
+                    'width': 0,
+                    'color': '#000000'
+                },
+                'polygon': {
+                    'nb_sides': 3
+                },
+                'image': {
+                    'src': 'img/github.svg',
+                    'width': 100,
+                    'height': 100
+                }
+            },
+            'opacity': {
+                'value': 0.5,
+                'random': true,
+                'anim': {
+                    'enable': false,
+                    'speed': 1,
+                    'opacity_min': 0.1,
+                    'sync': false
+                }
+            },
+            'size': {
+                'value': 2,
+                'random': true,
+                'anim': {
+                    'enable': true,
+                    'speed': 5,
+                    'size_min': 0,
+                    'sync': false
+                }
+            },
+            'line_linked': {
+                'enable': false,
+                'distance': 500,
+                'color': '#ffffff',
+                'opacity': 0.4,
+                'width': 2
+            },
+            'move': {
+                'enable': true,
+                'speed': 7.8914764163227265,
+                'direction': 'top',
+                'random': true,
+                'straight': false,
+                'out_mode': 'out',
+                'bounce': false,
+                'attract': {
+                    'enable': false,
+                    'rotateX': 600,
+                    'rotateY': 1200
+                }
+            }
+        },
+        'interactivity': {
+            'detect_on': 'canvas',
+            'events': {
+                'onhover': {
+                    'enable': false,
+                    'mode': 'bubble'
+                },
+                'onclick': {
+                    'enable': false,
+                    'mode': 'repulse'
+                },
+                'resize': true
+            },
+            'modes': {
+                'grab': {
+                    'distance': 400,
+                    'line_linked': {
+                        'opacity': 0.5
+                    }
+                },
+                'bubble': {
+                    'distance': 400,
+                    'size': 4,
+                    'duration': 0.3,
+                    'opacity': 1,
+                    'speed': 3
+                },
+                'repulse': {
+                    'distance': 200,
+                    'duration': 0.4
+                },
+                'push': {
+                    'particles_nb': 4
+                },
+                'remove': {
+                    'particles_nb': 2
+                }
+            }
+        },
+        'retina_detect': true
+    },
+    'miku-magic-intense': {
+        'particles': {
+            'number': {
+                'value': 5000,
+                'density': {
+                    'enable': true,
+                    'value_area': 3000
+                }
+            },
+            'color': {
+                'value': '#86cecb'
+            },
+            'shape': {
+                'type': 'circle',
+                'stroke': {
+                    'width': 0,
+                    'color': '#000000'
+                },
+                'polygon': {
+                    'nb_sides': 3
+                },
+                'image': {
+                    'src': 'img/github.svg',
+                    'width': 100,
+                    'height': 100
+                }
+            },
+            'opacity': {
+                'value': 0.5,
+                'random': true,
+                'anim': {
+                    'enable': false,
+                    'speed': 1,
+                    'opacity_min': 0.1,
+                    'sync': false
+                }
+            },
+            'size': {
+                'value': 2,
+                'random': true,
+                'anim': {
+                    'enable': true,
+                    'speed': 5,
+                    'size_min': 0,
+                    'sync': false
+                }
+            },
+            'line_linked': {
+                'enable': false,
+                'distance': 500,
+                'color': '#ffffff',
+                'opacity': 0.4,
+                'width': 2
+            },
+            'move': {
+                'enable': true,
+                'speed': 7.8914764163227265,
+                'direction': 'top',
+                'random': true,
+                'straight': false,
+                'out_mode': 'out',
+                'bounce': false,
+                'attract': {
+                    'enable': false,
+                    'rotateX': 600,
+                    'rotateY': 1200
+                }
+            }
+        },
+        'interactivity': {
+            'detect_on': 'canvas',
+            'events': {
+                'onhover': {
+                    'enable': false,
+                    'mode': 'bubble'
+                },
+                'onclick': {
+                    'enable': false,
+                    'mode': 'repulse'
+                },
+                'resize': true
+            },
+            'modes': {
+                'grab': {
+                    'distance': 400,
+                    'line_linked': {
+                        'opacity': 0.5
+                    }
+                },
+                'bubble': {
+                    'distance': 400,
+                    'size': 4,
+                    'duration': 0.3,
+                    'opacity': 1,
+                    'speed': 3
+                },
+                'repulse': {
+                    'distance': 200,
+                    'duration': 0.4
+                },
+                'push': {
+                    'particles_nb': 4
+                },
+                'remove': {
+                    'particles_nb': 2
+                }
+            }
+        },
+        'retina_detect': true
+    }
+});
 
 // Define the canvas objects used in the game
 monogatari.action ('canvas').objects ({ });
@@ -64,7 +399,8 @@ monogatari.assets ('scenes', {
 	"birthday-beedroom": "birthday-bedroom.png",
 	"outside-myas-place": "outside.png",
 	"outside-mysterious-building": "outside2.png",
-	"inside-mysterious-building": "inside.jpg",
+    "inside-mysterious-building": "inside.jpg",
+	"myo-throne-room": "throne-room.jpg",
 });
 
 
@@ -72,12 +408,12 @@ monogatari.assets ('scenes', {
 monogatari.characters ({
 	'brenn': {
 		name: 'Brenn',
-		color: '#5bcaff',
+		color: '#7C387D',
 		directory: "brenn"
 	},
 	'mya': {
 		name: 'Mya',
-		color: '#5bcaff',
+		color: '#FFFFFF',
 		directory: "mya"
 	},
 	'nota': {
@@ -85,4 +421,12 @@ monogatari.characters ({
 		color: '#5bcaff',
 		directory: "nota"
 	},
+    'miku-unknown': {
+        name: '???',
+		color: '#86cecb'
+    },
+    'myo-unknown': {
+        name: '???',
+		color: '#86cecb' // TODO green (opposite of pink)
+    },
 });

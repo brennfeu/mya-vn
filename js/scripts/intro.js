@@ -18,6 +18,6 @@ monogatari.script ({
 });
 
 var TODAY_DATE = new Date();
-var CHAPTER_I_DATE = new Date("2021-12-14");
+var CHAPTER_I_DATE = new Date("2022-12-14");
 var CHAPTER_II_DATE = new Date("2022-12-19");
 var CHAPTER_III_DATE = new Date("2022-12-24");
