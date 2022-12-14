@@ -24,9 +24,17 @@ monogatari.action ('message').messages ({
 		title: "<b>CHAPTER II</b>",
 		subtitle: "-- <i>An Uncertain Future</i> --"
 	},
+	"chapterII-unreleased": {
+        title: "Chapter II releases this 19th of December!",
+		subtitle: "I am very late. Sorry."
+	},
 	"chapterIII": {
 		title: "<b>CHAPTER III</b>",
 		subtitle: "-- <i>An Unbelievable Past</i> --"
+	},
+	"chapterIII-unreleased": {
+		title: "<b>Chapter III releases this 24th of December!</b>",
+		subtitle: "Timegating until the end!"
 	}
 });
 
@@ -38,7 +46,7 @@ monogatari.action('Particles').particles({
     'miku-magic-slight': {
         'particles': {
             'number': {
-                'value': 50,
+                'value': 25,
                 'density': {
                     'enable': true,
                     'value_area': 3000
@@ -148,7 +156,7 @@ monogatari.action('Particles').particles({
     'miku-magic': {
         'particles': {
             'number': {
-                'value': 2000,
+                'value': 1000,
                 'density': {
                     'enable': true,
                     'value_area': 3000
@@ -258,7 +266,7 @@ monogatari.action('Particles').particles({
     'miku-magic-intense': {
         'particles': {
             'number': {
-                'value': 5000,
+                'value': 2500,
                 'density': {
                     'enable': true,
                     'value_area': 3000
@@ -379,14 +387,26 @@ monogatari.assets ('gallery', { });
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-	"main-menu": "stationary-traveller.mp3"
+    "main-menu": "stationary-traveller.mp3",
+    "calm": "city-pop.mp3",
+    "calm-2": "calm2.mp3",
+    "sad": "jr-piano.mp3",
+    "sax-1": "sexy-time.mp3",
+    "epic": "epic.mp3",
+    "castle": "rick-w.mp3",
+	"montage": "montage.mp3",
 });
 
 // Define the voice files used in the game.
 monogatari.assets ('voices', { });
 
 // Define the sounds used in the game.
-monogatari.assets ('sounds', { });
+monogatari.assets ('sounds', {
+    "ouch": "hurtA.mp3",
+    "gym": "ohYeahDouble.mp3",
+    "tp1": "quickening.mp3",
+    "tp2": "lightning.mp3",
+});
 
 // Define the videos used in the game.
 monogatari.assets ('videos', { });
@@ -400,7 +420,10 @@ monogatari.assets ('scenes', {
 	"outside-myas-place": "outside.png",
 	"outside-mysterious-building": "outside2.png",
     "inside-mysterious-building": "inside.jpg",
-	"myo-throne-room": "throne-room.jpg",
+    "myo-throne-room": "throne-room.jpg",
+    "rebel-place": "emo-castle.jpg",
+	"rebel-lab": "lab.jpg",
+    "gym": "gym.jpg",
 });
 
 
@@ -409,24 +432,74 @@ monogatari.characters ({
 	'brenn': {
 		name: 'Brenn',
 		color: '#7C387D',
-		directory: "brenn"
+		directory: "brenn",
+        sprites: {
+            happy: "happy.png",
+            proud: "proud.png",
+            laugh: "laugh.png",
+            phone: "phone.png",
+            scared: "scared.png",
+            blush: "blush.png",
+        }
 	},
 	'mya': {
 		name: 'Mya',
-		color: '#FFFFFF',
-		directory: "mya"
+		color: '#FFFFFF'
 	},
 	'nota': {
 		name: 'Céliane',
 		color: '#5bcaff',
-		directory: "nota"
+		directory: "nota",
+        sprites: {
+            happy: "happy.png",
+            neutral: "neutral.png",
+            laugh: "laugh.png",
+            scared: "scared.png",
+        }
+	},
+	'car': {
+		name: 'Car Engine',
+		color: '#888888'
 	},
     'miku-unknown': {
         name: '???',
-		color: '#86cecb'
+		color: '#86cecb',
+        sprites: {
+            orb: "orb.png"
+        }
     },
     'myo-unknown': {
         name: '???',
-		color: '#86cecb' // TODO green (opposite of pink)
+		color: '#22B14C',
+    },
+    'myo': {
+        name: 'Myo',
+		color: '#22B14Cb',
+		directory: "myo",
+        sprites: {
+            hidden: "hidden.png"
+        }
+    },
+    'myo-guard': {
+        name: 'Guard',
+		color: '#22B14C'
+    },
+    'rebel': {
+        name: 'Rebel',
+		color: '#222222'
+    },
+    'marie': {
+        name: 'Marie',
+		color: '#222222',
+        sprites: {
+            neutral: "marie.png"
+        }
+    },
+    'alex': {
+        name: 'Alex',
+		color: '#b75498',
+        sprites: {
+            neutral: "alex.png"
+        }
     },
 });
