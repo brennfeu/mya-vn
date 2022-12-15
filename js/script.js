@@ -25,7 +25,7 @@ monogatari.action ('message').messages ({
 		subtitle: "-- <i>An Uncertain Future</i> --"
 	},
 	"chapterII-unreleased": {
-        title: "Chapter II releases this 19th of December!",
+        title: "Chapter II releases someday...",
 		subtitle: "I am very late. Sorry."
 	},
 	"chapterIII": {
@@ -33,7 +33,7 @@ monogatari.action ('message').messages ({
 		subtitle: "-- <i>An Unbelievable Past</i> --"
 	},
 	"chapterIII-unreleased": {
-		title: "<b>Chapter III releases this 24th of December!</b>",
+		title: "<b>Chapter III releases someday...</b>",
 		subtitle: "Timegating until the end!"
 	}
 });
